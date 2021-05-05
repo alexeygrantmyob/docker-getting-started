@@ -12,12 +12,10 @@ export class MyComponent extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Fetched Data</h1>
-          {this.state.words.map((word) => (
-              <p>{word}</p>
-          ))}
-      </div>
+        <div>
+            <h1>Fetched Data</h1>
+            {this.state.words.map((word) => (<div>{word}</div>))}
+        </div>
     );
   }
 }
